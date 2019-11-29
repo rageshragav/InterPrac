@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="5" passed="5">
+  <reporter-output>
+    <line>
+      <![CDATA[Hospital created successfully ]]>
+    </line>
+    <line>
+      <![CDATA[Department created successfully ]]>
+    </line>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="115819" started-at="2019-11-28T12:36:12Z" finished-at="2019-11-28T12:38:08Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="115819" started-at="2019-11-28T12:36:12Z" finished-at="2019-11-28T12:38:08Z">
+      <class name="testng.Hoopi_Patient">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:testng.Hoopi_Patient@1fbc7afb]" name="beforeMethod" is-config="true" duration-ms="10108" started-at="2019-11-28T18:06:02Z" finished-at="2019-11-28T18:06:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="extentReports()[pri:0, instance:testng.Hoopi_Patient@1fbc7afb]" name="extentReports" is-config="true" duration-ms="136" started-at="2019-11-28T18:06:12Z" finished-at="2019-11-28T18:06:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- extentReports -->
+        <test-method status="PASS" signature="Login()[pri:0, instance:testng.Hoopi_Patient@1fbc7afb]" name="Login" duration-ms="11467" started-at="2019-11-28T18:06:13Z" finished-at="2019-11-28T18:06:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:testng.Hoopi_Patient@1fbc7afb]" name="getResult" is-config="true" duration-ms="4" started-at="2019-11-28T18:06:24Z" finished-at="2019-11-28T18:06:24Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Login status=SUCCESS method=Hoppigo_Test.Login()[pri:0, instance:testng.Hoopi_Patient@1fbc7afb] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="newHospital()[pri:0, instance:testng.Hoopi_Patient@1fbc7afb]" name="newHospital" duration-ms="12974" started-at="2019-11-28T18:06:24Z" depends-on-methods="testng.Hoppigo_Test.Login" finished-at="2019-11-28T18:06:37Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Hospital created successfully ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- newHospital -->
+        <test-method status="PASS" signature="newDepartment()[pri:0, instance:testng.Hoopi_Patient@1fbc7afb]" name="newDepartment" duration-ms="16830" started-at="2019-11-28T18:06:37Z" depends-on-methods="testng.Hoppigo_Test.newHospital" finished-at="2019-11-28T18:06:54Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Department created successfully ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- newDepartment -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:testng.Hoopi_Patient@1fbc7afb]" name="getResult" is-config="true" duration-ms="0" started-at="2019-11-28T18:06:37Z" finished-at="2019-11-28T18:06:37Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=newHospital status=SUCCESS method=Hoppigo_Test.newHospital()[pri:0, instance:testng.Hoopi_Patient@1fbc7afb] output=Hospital created successfully ]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="fillDepartmentdetails()[pri:0, instance:testng.Hoopi_Patient@1fbc7afb]" name="fillDepartmentdetails" duration-ms="65940" started-at="2019-11-28T18:06:54Z" depends-on-methods="testng.Hoppigo_Test.newDepartment" finished-at="2019-11-28T18:08:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fillDepartmentdetails -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:testng.Hoopi_Patient@1fbc7afb]" name="getResult" is-config="true" duration-ms="0" started-at="2019-11-28T18:06:54Z" finished-at="2019-11-28T18:06:54Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=newDepartment status=SUCCESS method=Hoppigo_Test.newDepartment()[pri:0, instance:testng.Hoopi_Patient@1fbc7afb] output=Department created successfully ]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:testng.Hoopi_Patient@1fbc7afb]" name="getResult" is-config="true" duration-ms="0" started-at="2019-11-28T18:08:00Z" finished-at="2019-11-28T18:08:00Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=fillDepartmentdetails status=SUCCESS method=Hoppigo_Test.fillDepartmentdetails()[pri:0, instance:testng.Hoopi_Patient@1fbc7afb] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="runPatient()[pri:0, instance:testng.Hoopi_Patient@1fbc7afb]" name="runPatient" duration-ms="8279" started-at="2019-11-28T18:08:00Z" depends-on-methods="testng.Hoppigo_Test.fillDepartmentdetails" finished-at="2019-11-28T18:08:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runPatient -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:testng.Hoopi_Patient@1fbc7afb]" name="getResult" is-config="true" duration-ms="0" started-at="2019-11-28T18:08:08Z" finished-at="2019-11-28T18:08:08Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=runPatient status=SUCCESS method=Hoopi_Patient.runPatient()[pri:0, instance:testng.Hoopi_Patient@1fbc7afb] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="endReport()[pri:0, instance:testng.Hoopi_Patient@1fbc7afb]" name="endReport" is-config="true" duration-ms="175" started-at="2019-11-28T18:08:08Z" finished-at="2019-11-28T18:08:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endReport -->
+      </class> <!-- testng.Hoopi_Patient -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
