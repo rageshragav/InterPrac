@@ -21,6 +21,7 @@ public class Onlytesting {
 
 		System.out.println(todayAsString);
 		System.out.println(tomorrowAsString);
+		System.out.println("to test");
 	}
 
 }
