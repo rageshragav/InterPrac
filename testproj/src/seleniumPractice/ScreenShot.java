@@ -3,7 +3,7 @@ package seleniumPractice;
 import java.io.File;
 import java.io.IOException;
 
-import org.apache.commons.io.FileUtils;
+//import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.OutputType;
@@ -34,7 +34,7 @@ System.setProperty("webdriver.chrome.driver","D:\\chromedriver.exe");
         Thread.sleep(3000);
         TakesScreenshot ts = (TakesScreenshot)driver;
         File src = ts.getScreenshotAs(OutputType.FILE);
-        FileUtils.copyFile(src, new File("./Screenshots/email.png"));
+       // FileUtils.copyFile(src, new File("./Screenshots/email.png"));
         
         
 
