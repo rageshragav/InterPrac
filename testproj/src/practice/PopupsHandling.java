@@ -23,12 +23,14 @@ public class PopupsHandling {
 		System.out.println(text);
 		if(text.contains("am")){
 			System.out.println("it contains text");
+			System.out.println(alert.getText());
+			alert.accept();
 		}
 		else{
 			System.out.println("it dosent contains text");
+			
 		}
-		System.out.println(alert.getText());
-		alert.accept();
+	
 	}
 }
 
