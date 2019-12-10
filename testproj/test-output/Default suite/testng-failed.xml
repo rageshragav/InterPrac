@@ -3,19 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="testng.Hoopi_Patient">
+      <class name="practice.PopupsHandling">
         <methods>
-          <include name="runPatient"/>
-          <include name="fillDepartmentdetails"/>
-          <include name="Login"/>
-          <include name="getResult"/>
-          <include name="beforeMethod"/>
-          <include name="extentReports"/>
-          <include name="newHospital"/>
-          <include name="endReport"/>
-          <include name="newDepartment"/>
+          <include name="ExampleForAlert"/>
         </methods>
-      </class> <!-- testng.Hoopi_Patient -->
+      </class> <!-- practice.PopupsHandling -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

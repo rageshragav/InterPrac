@@ -7,8 +7,13 @@ import java.util.Date;
 
 public class get_date_format {
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+	
+	public static String getdate(){
+		return  new SimpleDateFormat("dd-MM-yyyy").format(new Date());
+		
+		
+	}
+	public void get_tomdate(){
 		Calendar calendar = Calendar.getInstance();
 		Date today = calendar.getTime();
 
@@ -22,6 +27,12 @@ public class get_date_format {
 		System.out.println(todayAsString);
 		System.out.println(tomorrowAsString);
 		System.out.println("to test");
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		getdate();
+		System.out.println(getdate());
 	}
 
 }

@@ -73,7 +73,7 @@ public static String testData(String key) {
 	//obj.load(objfile);
 	try {
 		
-		File file = new File("C:\\Users\\conevo\\eclipse-workspace\\testproj\\config.properties");
+		File file = new File("	C:\\Users\\conevo\\eclipse-workspace\\testproj\\config.properties");
 		FileInputStream fileInput = new FileInputStream(file);
 		Properties properties = new Properties();
 		properties.load(fileInput);
@@ -82,7 +82,7 @@ public static String testData(String key) {
 	} catch (Exception e) {
 	}
 	return returnText;
-}
+} 	
 @BeforeTest
 public void extentReports(){
 	extent = new ExtentReports(System.getProperty("user.dir")+"/test/STMExtentreport.html",true);
