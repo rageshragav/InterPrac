@@ -30,5 +30,6 @@
 	<classpathentry kind="lib" path="D:/EclipseNeedsForAutomation/extentreports-java-2.41.2/lib/snakeyaml-1.15.jar"/>
 	<classpathentry kind="lib" path="D:/EclipseNeedsForAutomation/extentreports-java-2.41.2/lib/sqlite-jdbc-3.8.11.1.jar"/>
 	<classpathentry kind="lib" path="D:/EclipseNeedsForAutomation/extentreports-java-2.41.2/lib/testng-6.9.9.jar"/>
+	<classpathentry kind="lib" path="D:/EclipseNeedsForAutomation/ashot-1.5.3.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

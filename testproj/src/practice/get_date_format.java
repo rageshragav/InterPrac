@@ -13,6 +13,13 @@ public class get_date_format {
 		
 		
 	}
+	public static void testcasting(){
+		double a = 5;
+		double b = (double)a;
+		
+		System.out.println("int to float " + b);
+		
+	}
 	public void get_tomdate(){
 		Calendar calendar = Calendar.getInstance();
 		Date today = calendar.getTime();
@@ -33,6 +40,7 @@ public class get_date_format {
 		
 		getdate();
 		System.out.println(getdate());
+		testcasting();
 	}
 
 }
