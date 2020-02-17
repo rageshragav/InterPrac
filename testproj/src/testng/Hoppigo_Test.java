@@ -15,6 +15,9 @@ import org.testng.annotations.Test;
 
 import com.relevantcodes.extentreports.LogStatus;
 
+import hoppigo_objrep.Hoppigologin_page;
+import hoppigo_objrep.WaitCondition;
+
 public class Hoppigo_Test extends Hoppigo_Base{
 	
 	String hospitalName = "Automated hospital";
@@ -29,7 +32,12 @@ public class Hoppigo_Test extends Hoppigo_Base{
 	//@Test(priority = 1)
 	@Test
 	public void Login() throws InterruptedException {
+		Hoppigologin_page hlp = new Hoppigologin_page(driver);
+		
 		logger = extent.startTest("Launching hoppigo and signing in");
+	
+		
+		 //final WaitCondition waitCondition = new WaitCondition();
 		 //TC 01 Checking whether user landed in admin tool page
 	      Assert.assertEquals("Administration Tool", driver.findElement(By.xpath("//p[@id='adminlogo-para']")).getText());
 	      logger.log(LogStatus.PASS,"User landed in adminstration tool page successfully");
@@ -40,16 +48,20 @@ public class Hoppigo_Test extends Hoppigo_Base{
 	    
 		//TC 03 Verifying login with empty fields and logging in
 		driver.findElement(By.id("login-submit")).click();
-		WebElement usernameError = driver.findElement(By.xpath("//span[contains(text(),'The Email field is required.')]"));
-		WebElement passwordError = driver.findElement(By.xpath("//span[contains(text(),'The Password field is required.')]"));
+		WebElement usernameError = driver.findElement(By.xpath("//*[contains(text(),'The Email field is required.')]"));
+		WebElement passwordError = driver.findElement(By.xpath("//*[contains(text(),'The Password field is required.')]"));
 		
 		if(usernameError.isDisplayed() && passwordError.isDisplayed()){
 			//driver.navigate().refresh();
 			logger.log(LogStatus.PASS,"Username & Password - Empty fields error shown");
-			driver.findElement(By.id("Email")).sendKeys("admin@pc.com");
-		    Thread.sleep(2000);
-		    driver.findElement(By.id("Password")).sendKeys("Conevo@2018");
-		    Thread.sleep(2000);
+			//driver.findElement(By.id("Email")).sendKeys("admin@pc.com");
+			//waitForVisibilityOfElementLocatedBy(FILL_EMAIl).sendKeys("admin");
+			//waitCondition.waitForVisibilityOfElementLocatedBy(FILL_EMAIl).sendKeys("admin@pc.com");
+			hlp.email().sendKeys("admin@pc.com");
+		   Thread.sleep(2000);
+		    hlp.password().sendKeys("Conevo@2018");
+		   // driver.findElement(By.id("Password")).sendKeys("Conevo@2018");
+		   Thread.sleep(2000);
 		    driver.findElement(By.id("login-submit")).click();
 		    Thread.sleep(1000);
 		}

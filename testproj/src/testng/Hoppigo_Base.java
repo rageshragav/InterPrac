@@ -11,7 +11,10 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
@@ -32,22 +35,33 @@ public class Hoppigo_Base {
 	public static ExtentReports extent;
 	public static ExtentTest logger;
 	public ExtentHtmlReporter htmlReporter;
+	public static By FILL_EMAIl = By.id("Email");
+	  public WebDriverWait webDriverWait;
+	  public static final int DELAY = 5;
+	
 	//public  static String forenaame_1 = testData("username");
 	//public static String surname_1 = testData("password");
-
+	/*public Hoppigo_Base() {
+        webDriverWait = new WebDriverWait(driver, DELAY);
+    }
+	 public WebElement waitForVisibilityOfElementLocatedBy( By locator) {
+	        return webDriverWait.until(ExpectedConditions.visibilityOfElementLocated(locator));
+	}*/
   @BeforeSuite
   public void beforeMethod() {
 	 
 	  // Create a new instance of the chrome driver
-	  System.setProperty("webdriver.chrome.driver","D:\\DRIVERS\\chromedriver.exe");
+	  System.setProperty("webdriver.chrome.driver","D:\\chromedriver.exe");
       driver = new ChromeDriver();
       
       driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
       driver.get("http://dev-patientcompanion.azurewebsites.net/account/login");
       
      
-  }
-  public void launchPatient(){
+  }	
+
+ 
+  public void launchPatient(){	
 	  ArrayList<String> tabs = new ArrayList<String> (driver.getWindowHandles());
 	    driver.switchTo().window(tabs.get(1)); //switches to new tab
 	    driver.get("http://dev-patientcompanion.azurewebsites.net/#/lang=en");
@@ -79,7 +93,8 @@ public static String testData(String key) {
 		properties.load(fileInput);
 		returnText = properties.getProperty(key);
 		fileInput.close();
-	} catch (Exception e) {
+		
+	} catch (Exception e) {	
 	}
 	return returnText;
 } 	
