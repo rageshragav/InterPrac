@@ -15,7 +15,7 @@ public class String_Get_Small_Letters_Reverse {
 	}
 	}
 	public static void main(String[] args) {
-		
+			
 		String text = "This IS My TEXT StrinG";
 		//String text = "45))=:&TestG";
 		String test = text.replaceAll("[^a-z]","");
