@@ -40,7 +40,6 @@
 	<classpathentry kind="lib" path="D:/EclipseNeedsForAutomation/Apache POI/poi-3.17/poi-ooxml-3.17.jar"/>
 	<classpathentry kind="lib" path="D:/EclipseNeedsForAutomation/Apache POI/poi-3.17/poi-ooxml-schemas-3.17.jar"/>
 	<classpathentry kind="lib" path="D:/EclipseNeedsForAutomation/Apache POI/poi-3.17/poi-scratchpad-3.17.jar"/>
-	<classpathentry kind="lib" path="D:/EclipseNeedsForAutomation/ashot-1.5.4.jar"/>
 	<classpathentry kind="lib" path="D:/EclipseNeedsForAutomation/poi-4.1.2/poi-4.1.2.jar"/>
 	<classpathentry kind="lib" path="D:/EclipseNeedsForAutomation/poi-4.1.2/poi-examples-4.1.2.jar"/>
 	<classpathentry kind="lib" path="D:/EclipseNeedsForAutomation/poi-4.1.2/poi-excelant-4.1.2.jar"/>
@@ -61,5 +60,6 @@
 	<classpathentry kind="lib" path="D:/EclipseNeedsForAutomation/poi-4.1.2/lib/SparseBitSet-1.2.jar"/>
 	<classpathentry kind="lib" path="D:/EclipseNeedsForAutomation/poi-4.1.2/ooxml-lib/curvesapi-1.06.jar"/>
 	<classpathentry kind="lib" path="D:/EclipseNeedsForAutomation/poi-4.1.2/ooxml-lib/xmlbeans-3.1.0.jar"/>
+	<classpathentry kind="lib" path="D:/EclipseNeedsForAutomation/ashot-1.5.3.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
